@@ -32,6 +32,8 @@ x = x(:);
 y = y(:);
 if isscalar(w)
     w = ones(size(x)) * w;
+else
+    w = w(:);
 end
 
 nx = length(x);
